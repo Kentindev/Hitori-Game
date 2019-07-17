@@ -3,7 +3,7 @@ tr,td {
     height: 5vw; 
     background-color: whitesmoke;
     text-align: center;
-    
+    cursor: pointer;
     
   }
   #warningtext{

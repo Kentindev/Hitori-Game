@@ -1,3 +1,4 @@
+
 //Rules button
 $("#rulesbutton" ).mouseover(function() {
     $("#rules").show()
@@ -9,7 +10,7 @@ $("#rules" ).mouseout(function() {
  });
 
 
-//interractivité avec les cases du board
+//interactivity with the boxes of the board
 $("td").click(function(){
     if( $(this).css("background-color") == "rgb(255, 0, 0)" ) {
         $(this).css("background-color", "whitesmoke");
@@ -19,9 +20,10 @@ $("td").click(function(){
    }
 });
 
-//Newgame Button
+//init first tab
 tablenb=1;
 
+//Newgame Button
 $("#newgame").click(function(){
     timerstop = false;
     var timervar;

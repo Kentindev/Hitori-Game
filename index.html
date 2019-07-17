@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link href="hitoristylesheet.css" type="text/css" rel="stylesheet" >
+      <link href="css/hitoristylesheet.css" type="text/css" rel="stylesheet" >
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
@@ -9,7 +9,7 @@
 <p id="timer">Time : 0:00</p>
 <p id="warningtext">i have nothing to warn...</p>
 
-<img id="title" src="hitori.png">
+<img id="title" src="asset/hitori.png">
 
 
 <div id="backgroundtable"></div>
@@ -132,21 +132,21 @@
 
 
 
-<input id="newgame" class="button" type="image" src="new.png" alt="new" >
-<input id="reset" type="image" class="button" src="reset.png"alt="reset"  >
-<input id="check" type="image" class="button" src="check.png"alt="check"  >
-<input id="rulesbutton" type="image" class="button" src="rules.png"alt="rules"  >
+<input id="newgame" class="button" type="image" src="asset/new.png" alt="new" >
+<input id="reset" type="image" class="button" src="asset/reset.png"alt="reset"  >
+<input id="check" type="image" class="button" src="asset/check.png"alt="check"  >
+<input id="rulesbutton" type="image" class="button" src="asset/rules.png"alt="rules"  >
 
 
-<div id="rules"><h5>Au début du jeu, chaque cellule d'une grille contient un chiffre (ou une lettre).</br>
-        Le but est de colorer des cellules de sorte qu'il n'y ait qu'un seul même chiffre non coloré par ligne et par colonne.</br>
-        Les cellules colorées ne doivent pas se toucher par les côtés. Mais leurs coins peuvent se toucher.</br>
-        Toutes les cellules non colorées doivent être connectées par leurs côtés pour ne former qu'une seule pièce </br>
-        (on doit pouvoir parcourir toutes les cellules non colorées en passant de l'une à l'autre par un côté).
+<div id="rules"><h5>At the beginning of the game, each cell of a grid contains a number (or letter).</br>
+      The goal is to color cells so that there is only one single uncolored number per row and per column.</br>
+      The coloured cells must not touch each other from the sides. But their corners can touch each other.</br>
+      All uncolored cells must be connected by their sides to form a single piece </br>
+      (it must be possible to go through all the uncolored cells from one side to the other).
       </h5>
     </div>
-    <script src="Jquery.js" type="text/javascript"></script>
-    <script src="hitoriscript.js" type="text/javascript"></script>
+    <script src="js/Jquery.js" type="text/javascript"></script>
+    <script src="js/hitoriscript.js" type="text/javascript"></script>
 </body>
 
 
