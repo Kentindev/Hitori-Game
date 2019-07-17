@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="hitoristylesheet.css" type="text/css" rel="stylesheet" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+<body>
+<p id="timer">Time : 0:00</p>
+<p id="warningtext">i have nothing to warn...</p>
+
+<img id="title" src="hitori.png">
+
+
+<div id="backgroundtable"></div>
+<table id="table1">
+               <tr>
+                <td class="badchoice1">5</td>
+                <td class="badchoice1">4</td> 
+                <td class="goodchoice1">4</td>
+                <td class="badchoice1">3</td> 
+                <td class="goodchoice1">4</td>
+              </tr>
+              <tr>
+                    <td class="badchoice1">3</td>
+                    <td class="goodchoice1">4</td> 
+                    <td class="badchoice1">4</td> 
+                    <td class="badchoice1">2</td>
+                    <td class="badchoice1">5</td> 
+                    
+              </tr>
+              <tr>
+                    <td class="badchoice1">2</td>
+                    <td class="badchoice1">5</td> 
+                    <td class="goodchoice1">5</td>
+                    <td class="badchoice1">1</td> 
+                    <td class="goodchoice1">2</td>
+              </tr>
+              <tr>
+                    <td class="goodchoice1">2</td>
+                    <td class="badchoice1">2</td> 
+                    <td class="badchoice1">1</td>
+                    <td class="badchoice1">4</td> 
+                    <td class="badchoice1">5</td>
+              </tr>
+              <tr>
+                    <td class="badchoice1">4</td>
+                    <td class="badchoice1">1</td> 
+                    <td class="badchoice1">5</td>
+                    <td class="goodchoice1">3</td> 
+                    <td class="badchoice1">2</td>
+              </tr>
+
+</table>
+<table id="table2">
+      <tr>
+       <td class="goodchoice2">4</td>
+       <td class="badchoice2">4</td> 
+       <td class="goodchoice2">4</td>
+       <td class="badchoice2">2</td> 
+       <td class="goodchoice2">2</td>
+     </tr>
+     <tr>
+      <td class="badchoice2">4</td>
+      <td class="badchoice2">2</td> 
+      <td class="badchoice2">3</td>
+      <td class="badchoice2">5</td> 
+      <td class="badchoice2">1</td>
+     </tr>
+     <tr>
+      <td class="badchoice2">1</td>
+      <td class="goodchoice2">1</td> 
+      <td class="badchoice2">2</td>
+      <td class="goodchoice2">5</td> 
+      <td class="badchoice2">4</td>
+     </tr>
+     <tr>
+      <td class="goodchoice2">1</td>
+      <td class="badchoice2">3</td> 
+      <td class="badchoice2">4</td>
+      <td class="badchoice2">1</td> 
+      <td class="badchoice2">5</td>
+     </tr>
+     <tr>
+      <td class="badchoice2">3</td>
+      <td class="badchoice2">5</td> 
+      <td class="goodchoice2">4</td>
+      <td class="badchoice2">4</td> 
+      <td class="goodchoice2">1</td>
+     </tr>
+
+</table>
+<table id="table3">
+      <tr>
+      <td class="goodchoice3">2</td>
+      <td class="badchoice3">2</td> 
+      <td class="goodchoice3">2</td>
+      <td class="badchoice3">5</td> 
+      <td class="badchoice3">1</td>
+     </tr>
+     <tr>
+      <td class="badchoice3">5</td>
+      <td class="badchoice3">4</td> 
+      <td class="badchoice3">2</td>
+      <td class="badchoice3">3</td> 
+      <td class="goodchoice3">4</td>
+     </tr>
+     <tr>
+      <td class="goodchoice3">5</td>
+      <td class="badchoice3">1</td> 
+      <td class="badchoice3">4</td>
+      <td class="goodchoice3">5</td> 
+      <td class="badchoice3">2</td>
+     </tr>
+     <tr>
+      <td class="badchoice3">2</td>
+      <td class="goodchoice3">4</td> 
+      <td class="badchoice3">5</td>
+      <td class="badchoice3">1</td> 
+      <td class="badchoice3">3</td>
+     </tr>
+     <tr>
+      <td class="badchoice3">3</td>
+      <td class="badchoice3">5</td> 
+      <td class="badchoice3">1</td>
+      <td class="goodchoice3">1</td> 
+      <td class="badchoice3">4</td>
+     </tr>
+
+</table>
+
+
+
+
+<input id="newgame" class="button" type="image" src="new.png" alt="new" >
+<input id="reset" type="image" class="button" src="reset.png"alt="reset"  >
+<input id="check" type="image" class="button" src="check.png"alt="check"  >
+<input id="rulesbutton" type="image" class="button" src="rules.png"alt="rules"  >
+
+
+<div id="rules"><h5>Au début du jeu, chaque cellule d'une grille contient un chiffre (ou une lettre).</br>
+        Le but est de colorer des cellules de sorte qu'il n'y ait qu'un seul même chiffre non coloré par ligne et par colonne.</br>
+        Les cellules colorées ne doivent pas se toucher par les côtés. Mais leurs coins peuvent se toucher.</br>
+        Toutes les cellules non colorées doivent être connectées par leurs côtés pour ne former qu'une seule pièce </br>
+        (on doit pouvoir parcourir toutes les cellules non colorées en passant de l'une à l'autre par un côté).
+      </h5>
+    </div>
+    <script src="Jquery.js" type="text/javascript"></script>
+    <script src="hitoriscript.js" type="text/javascript"></script>
+</body>
+
+
+
+
+
+
+</html>

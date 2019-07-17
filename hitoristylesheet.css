@@ -1,0 +1,129 @@
+tr,td { 
+    width: 5vw; 
+    height: 5vw; 
+    background-color: whitesmoke;
+    text-align: center;
+    
+    
+  }
+  #warningtext{
+    position:fixed;
+    left:30px;
+    top:250px;
+    font-size:3vw;
+    display: none;
+
+
+  }
+body{
+    background-color: #b3cde0;
+}
+#rules{
+    display: none;
+    color:black; 
+    top:4.166666666666666VW;
+    right: 0.5208333333333333VW;
+    position: fixed;
+    background-color: 	#6497b1;
+    padding: 0.78125VW;
+    font-size: 0.8854166666666666VW;
+ }
+
+ #rulesbutton{
+     margin: 20px;
+     top:60px;
+     right: 10px;
+     position: fixed;
+
+ }
+ table{
+     
+    margin-left: 35vw;
+     
+ }
+#table2,#table3{
+    display:none;
+    
+}
+
+#title{
+   margin-left: 38vw;
+   
+   
+
+}
+#newgame{
+
+    bottom: 2.5vw;
+    right: 60vw;
+position: absolute;
+}
+#reset{
+    bottom: 2.5vw;
+    right: 50vw;
+    position: absolute;
+    }
+#check{
+    bottom: 2.5vw;
+    right: 40vw;
+    position: absolute;
+    }
+
+#timer{
+    position: absolute;
+    font-size:6vw;
+    color:darkblue;
+}
+
+@media only screen and (max-width: 1280px) {
+  
+    table{
+     
+        margin-left: 38vw;
+         
+     }
+     #title{
+        margin-left: 36vw;
+        
+        
+     
+     }
+     #reset{
+        bottom: 2.5vw;
+        right: 45vw;
+        position: absolute;
+        }
+    #check{
+        bottom: 2.5vw;
+        right: 35vw;
+        position: absolute;
+        }
+        #newgame{
+
+            bottom: 2.5vw;
+            right: 55vw;
+        position: absolute;
+        }
+}
+@media only screen and (max-height: 864px) {
+ 
+      #reset{
+        bottom: 1vw;
+        
+        }
+    #check{
+        bottom: 1vw;
+        
+        }
+        #newgame{
+
+            bottom: 1vw;
+           
+        }
+        #title{
+            margin-top: 0vw;
+            
+            
+         
+         }
+}
