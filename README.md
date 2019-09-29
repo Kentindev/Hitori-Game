@@ -1,5 +1,6 @@
 Hitori Game was developed for the purpose of a project noted for my first year at Supinfo
 
+Play it : https://qgruber67.github.io/Hitori-Game/
 
 RULES:
 Hitori is played with a grid of squares or cells, with each cell initially containing a number. The game is played by eliminating squares/numbers and this is done by blacking them out. The objective is to transform the grid to a state wherein all three following rules are true:
