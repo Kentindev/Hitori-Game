@@ -77,17 +77,7 @@ $("#check").click(function(){
         $("#warningtext").fadeOut(5000);
 
         }
-    else if ( $(".goodchoice1").css("background-color") == "rgb(255, 0, 0)" ) {
-        document.getElementById("warningtext").innerHTML = String("You Won GG");
-        $("#warningtext").css('color', 'green');
-        $("#timer").css('color', 'yellow');
-        $("#warningtext").fadeIn(1000);
-        $("#warningtext").fadeOut(5000);
-        timerstop=true;
-        //freeze timer
-        
-        }
-        else{
+        else if ( $(".goodchoice1").css("background-color") == "rgb(255, 255, 255)" ) {
             document.getElementById("warningtext").innerHTML = String("FALSE +15sec");
             $("#warningtext").css('color', 'red');
             clearInterval(timervar);
@@ -95,7 +85,16 @@ $("#check").click(function(){
             var timervar;
             $("#warningtext").fadeIn(1000);
             $("#warningtext").fadeOut(5000);
-        }
+            }
+         else{
+            document.getElementById("warningtext").innerHTML = String("You Won GG");
+             $("#warningtext").css('color', 'green');
+             clearInterval(timervar);
+             $("#timer").css('color', 'yellow');
+             $("#warningtext").fadeIn(1000);
+             $("#warningtext").fadeOut(5000);
+             timerstop=true;
+             }
     }
 
     if(tablenb==2){
@@ -106,9 +105,18 @@ $("#check").click(function(){
             time += 15;
             var timervar;
             $("#warningtext").fadeIn(1000);
-        $("#warningtext").fadeOut(5000);
+            $("#warningtext").fadeOut(5000);
             }
-        else if ( $(".goodchoice2").css("background-color") == "rgb(255, 0, 0)" ) {
+        else if ( $(".goodchoice2").css("background-color") == "rgb(255, 255, 255)" ) {
+            document.getElementById("warningtext").innerHTML = String("FALSE +15sec");
+            $("#warningtext").css('color', 'red');
+            clearInterval(timervar);
+            time += 15;
+            var timervar;
+            $("#warningtext").fadeIn(1000);
+            $("#warningtext").fadeOut(5000);
+            }
+        else{
             document.getElementById("warningtext").innerHTML = String("You Won GG");
             $("#warningtext").css('color', 'green');
             clearInterval(timervar);
@@ -116,15 +124,6 @@ $("#check").click(function(){
             $("#warningtext").fadeIn(1000);
             $("#warningtext").fadeOut(5000);
             timerstop=true;
-            }
-            else{
-                document.getElementById("warningtext").innerHTML = String("FALSE +15sec");
-                $("#warningtext").css('color', 'red');
-                clearInterval(timervar);
-                time += 15;
-                var timervar;
-                $("#warningtext").fadeIn(1000);
-                $("#warningtext").fadeOut(5000);
             }
         }
         if(tablenb==3){
@@ -137,7 +136,16 @@ $("#check").click(function(){
                 $("#warningtext").fadeIn(1000);
                 $("#warningtext").fadeOut(5000);
                 }
-            else if ( $(".goodchoice3").css("background-color") == "rgb(255, 0, 0)" ) {
+            else if ( $(".goodchoice3").css("background-color") == "rgb(255, 255, 255)" ) {
+                document.getElementById("warningtext").innerHTML = String("FALSE +15sec");
+                $("#warningtext").css('color', 'red');
+                clearInterval(timervar);
+                time += 15;
+                var timervar;
+                $("#warningtext").fadeIn(1000);
+                $("#warningtext").fadeOut(5000);
+                }
+            else{
                 document.getElementById("warningtext").innerHTML = String("You Won GG");
                 $("#warningtext").css('color', 'green');
                 clearInterval(timervar);
@@ -145,15 +153,6 @@ $("#check").click(function(){
                 $("#warningtext").fadeIn(1000);
                 $("#warningtext").fadeOut(5000);
                 timerstop=true;
-                }
-                else{
-                    document.getElementById("warningtext").innerHTML = String("FALSE +15sec");
-                    $("#warningtext").css('color', 'red');
-                    clearInterval(timervar);
-                    time += 15;
-                    var timervar;
-                    $("#warningtext").fadeIn(1000);
-                    $("#warningtext").fadeOut(5000);
                 }
             }
     });
